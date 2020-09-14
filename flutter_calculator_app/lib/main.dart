@@ -90,8 +90,11 @@ class _MyHomePageState extends State<MyHomePage> {
           title: Text(widget.title),
         ),
         body: new Container(
-          child: SafeArea(
+
+          child: SafeArea (
+
             child: new Column(
+
               children: <Widget>[
 
                 Container(
@@ -156,13 +159,12 @@ class _MyHomePageState extends State<MyHomePage> {
                         caluclatorBtn("=")
                       ],
                     )
+
                   ],
                 )
-
-
               ],
             ),
-          ),
+          )
         )
     );
   }
