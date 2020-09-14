@@ -90,80 +90,78 @@ class _MyHomePageState extends State<MyHomePage> {
           title: Text(widget.title),
         ),
         body: new Container(
-          child: new Column(
-            children: <Widget>[
+          child: SafeArea(
+            child: new Column(
+              children: <Widget>[
 
-              Container(
+                Container(
 
-
-
-                  padding: EdgeInsets.symmetric(
-                      vertical: 24.0,
-                      horizontal: 12.0
-                  ),
-
-                  alignment: Alignment.centerRight,
-
-                  child: new Text(output,
-                    style: new TextStyle(
-                        fontSize: 48.0,
-                        fontWeight: FontWeight.bold
+                    padding: EdgeInsets.symmetric(
+                        vertical: 24.0,
+                        horizontal: 12.0
                     ),
-                  )),
 
-              Expanded(
-                  child: new Divider()
-              ),
+                    alignment: Alignment.centerRight,
 
-              Column(
+                    child: new Text(output,
+                      style: new TextStyle(
+                          fontSize: 48.0,
+                          fontWeight: FontWeight.bold
+                      ),
+                    )),
 
-                children: [
-                  Row(
-                    children: [
-                      caluclatorBtn("7"),
-                      caluclatorBtn("8"),
-                      caluclatorBtn("9"),
-                      caluclatorBtn("/")
-                    ],
-                  ),
-                  Row(
-                    children: [
-                      caluclatorBtn("4"),
-                      caluclatorBtn("5"),
-                      caluclatorBtn("6"),
-                      caluclatorBtn("*")
-                    ],
-                  ),
-                  Row(
-                    children: [
-                      caluclatorBtn("1"),
-                      caluclatorBtn("2"),
-                      caluclatorBtn("3"),
-                      caluclatorBtn("-")
-                    ],
-                  ),
-                  Row(
-                    children: [
-                      caluclatorBtn("."),
-                      caluclatorBtn("0"),
-                      caluclatorBtn("00"),
-                      caluclatorBtn("+")
-                    ],
-                  ),
+                Expanded(
+                    child: new Divider()
+                ),
 
-                  Row(
-                    children: [
-                      caluclatorBtn("CLEAR"),
-                      caluclatorBtn("=")
-                    ],
-                  )
+                Column(
+
+                  children: [
+                    Row(
+                      children: [
+                        caluclatorBtn("7"),
+                        caluclatorBtn("8"),
+                        caluclatorBtn("9"),
+                        caluclatorBtn("/")
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        caluclatorBtn("4"),
+                        caluclatorBtn("5"),
+                        caluclatorBtn("6"),
+                        caluclatorBtn("*")
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        caluclatorBtn("1"),
+                        caluclatorBtn("2"),
+                        caluclatorBtn("3"),
+                        caluclatorBtn("-")
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        caluclatorBtn("."),
+                        caluclatorBtn("0"),
+                        caluclatorBtn("00"),
+                        caluclatorBtn("+")
+                      ],
+                    ),
+
+                    Row(
+                      children: [
+                        caluclatorBtn("CLEAR"),
+                        caluclatorBtn("=")
+                      ],
+                    )
+                  ],
+                )
 
 
-                ],
-              )
-
-
-            ],
+              ],
+            ),
           ),
         )
     );
